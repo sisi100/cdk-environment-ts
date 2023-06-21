@@ -1,11 +1,9 @@
-テンプレート
-
-# 構成
-
-![](docs/diagrams/app.png)
-
-構成の出力には https://github.com/pistazie/cdk-dia を使わせて頂いてます！感謝！
+typescriptで環境変数使ってみた
 
 ```
-npm run deploy
+# dev
+$ cdk synth --app 'npx ts-node src/app.ts' -c env=dev
+
+#stg
+$ cdk synth --app 'npx ts-node src/app.ts' -c env=stg
 ```
